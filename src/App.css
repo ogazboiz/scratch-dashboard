@@ -1,0 +1,303 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d2634;
+  color: #9e9ea4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr ;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 
+     'sidebar header header header'
+     'sidebar main main main';
+     height: 100vh;
+} */
+@font-face {
+  font-family: SF Pro Display ;
+  src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.sidebar-container{
+  display: flex;
+  flex-direction: row;
+}
+.logo-container{
+  margin-top: 37px;
+  padding-left: 15px;
+  padding-top: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 12px;
+  
+}
+.logo-container > .logo-text{
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.logo-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  position: relative;
+  left: 21px;
+}
+.frame{
+  position: relative;
+ 
+}
+.sidebar{
+  height: 100%;
+  width: 344px;
+  background-color:#F7F8FA;
+}
+.sidebar-color{
+  width: 32px;
+  /* height: 1208px; */
+  background-color: #367AF9;
+  border-bottom-left-radius: 8px;
+}
+.SidebarList{
+  height: auto;
+  width: 100%;
+  padding: 0;
+  padding-top: 201px;
+  margin-bottom: 151px;
+}
+.SidebarList .row{
+  /* width: 100%; */
+  width: 275px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 10px 0px 10px 20px;
+  color: #667085;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color: #EFE9FF;
+  border-radius: 8px;
+}
+.SidebarList #active{
+  background-color: #EFE9FF;
+  border-radius: 8px;
+  
+
+}
+.list-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+/* .row #icon{
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+.row #title{
+  flex: 70%;
+} */
+button{
+  padding: 12px 56.5px 12px 57.5px;
+  margin-left: 14px;
+  border-radius: 6px;
+  border: none;
+  
+  
+}
+button span{
+  padding: 0 9px 0 0 ;
+  margin: 0;
+}
+.centered-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #34A853;
+  color: #FAFAFA;
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* Add any additional styling you need for the button */
+}
+
+.button-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.button-text {
+  /* Add any additional styling for the text */
+  display: block;
+}
+.base{
+  margin-top: 6px;
+  margin-bottom: 136px;
+  width: 250px;
+  /* height: 272px; */
+
+  border-radius: 8px;
+  background: var(--gray-0, #FFF);
+
+  /* Shadows/Gray/1 Level */
+  box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+}
+/* Card.css */
+
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding-left: 21px;
+  padding-top: 17.88px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 29.286px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  margin-right: 25px;
+  padding: 5px;
+  border: 2px solid var(--gray-100, #DADEE5);
+  /* opacity: 0.3;    */
+}
+
+.info {
+  color: var(--gray-500, #606C80);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 181.818% */
+}
+
+/* Additional styling as needed */
+/* Add your styles to make it look like a toggle switch */
+label {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 54px;
+  margin-bottom: 58px;
+}
+
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.3s;
+}
+
+input:checked + .toggle-switch {
+  background-color: #2196F3;
+}
+
+.toggle-switch::before {
+  position: absolute;
+  content: "";
+  width: 121px;
+  height: 38px;
+  left: 9px;
+  bottom: 8px;
+  border-radius: 24px;
+  background: var(--white-white, #FFF);
+  transition: transform 0.3s;
+}
+
+
+input:checked + .toggle-switch::before {
+  transform: translateX(112px);
+}
+
+.toggle-switch-label-text{
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevent interaction with the label text */
+  color: var(--gray-290, #9AA4B5);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Bold/10 */
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 160% */
+}
+.toggle-switch-label-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 188px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevent interaction with the label text */
+  color: var(--gray-290, #9AA4B5);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Bold/10 */
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+line-height: 16px; /* 160% */
+}
+.toggle-switch-label-icon{
+  position: absolute;
+  top: 53%;
+  left: 45px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevent interaction with the label text */
+  color: var(--gray-290, #9AA4B5);
+}
+.toggle-switch-label-icon2{
+  position: absolute;
+  top: 53%;
+  left: 155px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevent interaction with the label text */
+  color: var(--gray-290, #9AA4B5);
+}
