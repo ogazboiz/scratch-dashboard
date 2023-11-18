@@ -20,9 +20,15 @@
   font-family: SF Pro Display ;
   src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App{
   width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 body{
   margin: 0;
@@ -33,9 +39,8 @@ body{
   flex-direction: row;
 }
 .logo-container{
-  margin-top: 37px;
+  margin-top: 55px;
   padding-left: 15px;
-  padding-top: 37px;
   display: flex;
   justify-content: center;
   align-items: center;

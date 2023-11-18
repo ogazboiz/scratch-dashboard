@@ -1,0 +1,35 @@
+.input-wrapper{
+    background-color: var(--gray-20, #F7F8FA);
+    width: 200px;
+    border-radius: 10px;
+    padding: 0 15px;
+    box-shadow: 0 0 8 #ddd;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 23px;
+    opacity: 1;
+    color: var(--gray-300, #98A2B2);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Bold/12 */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+    }
+input:focus {
+    outline: none;
+}
+.search-icons{
+    color: var(--gray-300, #98A2B2);
+    width: 20px;
+    height: 20px;
+}

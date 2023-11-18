@@ -1,0 +1,11 @@
+.bottom-chart{
+    width: 360px;
+    height: 466px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white-white, #FFF);
+    margin-top: 31px;
+    padding-bottom: 12px;
+    /* Shadows/Gray/1 Level */
+    box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+}
