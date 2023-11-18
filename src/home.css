@@ -110,13 +110,31 @@
   .profile-power{
     margin-right: 42px;
   }
+  .bottom-chart-section{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
   .bottom-chart-section > .home-chart {
     width: 360px;
-    height: 466px;
     border-radius: 8px;
     background: var(--white-white, #FFF);
     margin-top: 24px;
     padding-bottom: 12px;
     /* Shadows/Gray/1 Level */
     box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+  }
+  .bottom-chart-section > .home-chart > h1{
+    padding-top: 30px;
+    padding-bottom: 71px;
+    color: var(--gray-700, #323C4D);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Bold/14 */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
   }

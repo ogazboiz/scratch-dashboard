@@ -1,0 +1,47 @@
+.dougnut-inner{
+    margin: auto;
+    width: fit-content;
+}
+.dougnut-chart{
+    padding: 5px;
+}
+.center-text{
+    position: relative;
+    left: 25%;
+    bottom: 50%;
+    
+}
+.custom-legend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 65px auto 36px;
+    
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .legend-marker {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  
+  .legend-label {
+    color: var(--gray-500, #606C80);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Bold/12 */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+  }
+  

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'apexcharts';
-import Chart2 from './chart2';
+import Chart2 from './Chart2';
 const CustomLegend = ({ labels, colors }) => (
   <div style={{ display: 'flex',width: '393px', justifyContent: 'space-between', padding: '28px 10px 10px 10px' }}>
     {labels.map((label, index) => (

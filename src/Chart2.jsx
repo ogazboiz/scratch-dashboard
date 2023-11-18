@@ -16,11 +16,6 @@ const Chart2 = () => {
             show: false, // Hide the toolbar menu
           },
       },
-      grid: {
-        padding: {
-            top: 0
-        }
-      },
       plotOptions: {
         bar: {
           horizontal: false,

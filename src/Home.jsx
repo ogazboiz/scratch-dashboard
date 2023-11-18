@@ -5,7 +5,8 @@ import SearchBar from './SearchBar'
 import profilePic from "./assets/profiles/Base6.png";
 import setting from "./assets/setting.svg";
 import power from "./assets/power.svg";
-import BottomChart from './BottomChart';
+import DoughnutChart from './DoughnutChart';
+import Application from './Application';
 function Home() {
   return (
     <div className="home-container">
@@ -35,8 +36,12 @@ function Home() {
       </div>
       <div className='bottom-chart-section'>
         <div className='home-chart'>
-          
-          <BottomChart/>  
+          <h1>Total numbers Extracted</h1>
+          <DoughnutChart/>  
+        </div>
+        <div className='home-chart'>
+          <h1>Application</h1>
+          <Application/>
         </div>
            
           </div>
