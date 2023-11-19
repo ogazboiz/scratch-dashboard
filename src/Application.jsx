@@ -1,13 +1,32 @@
 import React from 'react'
 import './Application.css'
-function Application() {
+import chromeIcon from "./assets/applications/chrome.svg";
+import safariIcon from "./assets/applications/safari.svg";
+import edgeIcon from "./assets/applications/edge.svg";
+import lineIcon from "./assets/applications/line.svg";
+const browserIcons = {
+    chrome: chromeIcon,
+    safari: safariIcon,
+    chrome: chromeIcon,
+    chrome: chromeIcon,
+    edge: edgeIcon,
+    safari: safariIcon,
+    line: lineIcon
+  };
+function Application({ applications }) {
   return (
     <div className='application-container'>
-        <div className='application-list'>
-            <img src="" alt="" srcset="" />
-            <p>Chrome</p>
-            <p>1 h 12 min</p>
+        {applications.map((app) => (
+        <div key={app.id} className='application-list'>
+          <img src={browserIcons[app.browser]} alt={app.browser} />
+          <div className='application-content'>
+            <p className='title'>{app.name}</p>
+            <p className='time'>{app.time}</p>
+          </div>
+         
+          
         </div>
+      ))}
     </div>
   )
 }
