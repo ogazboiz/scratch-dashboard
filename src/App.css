@@ -26,13 +26,8 @@
   padding: 0;
 }
 .App{
-  width: 100vw;
   display: flex;
   flex-direction: row;
-}
-body{
-  margin: 0;
-  padding: 0;
 }
 .sidebar-container{
   display: flex;
@@ -87,6 +82,9 @@ body{
   padding: 0;
   padding-top: 201px;
   margin-bottom: 106px;
+}
+.sidebar-link{
+  text-decoration: none;
 }
 .SidebarList .row{
   /* width: 100%; */

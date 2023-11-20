@@ -7,10 +7,7 @@ import lineIcon from "./assets/applications/line.svg";
 const browserIcons = {
     chrome: chromeIcon,
     safari: safariIcon,
-    chrome: chromeIcon,
-    chrome: chromeIcon,
     edge: edgeIcon,
-    safari: safariIcon,
     line: lineIcon
   };
 function Application({ applications }) {

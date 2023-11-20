@@ -46,6 +46,39 @@ function Home() {
             <Chart/>  
 
         </div>
+        <div className='home-chart2'>
+    
+        <div className='cities-chart'>
+            <div>
+              <div className='ghana-container'>
+                
+                {/* <GhanaChart/> */}
+              </div>
+              <div className='ghana-container'>
+                
+                {/* <GhanaChart/> */}
+              </div>
+             
+            </div>
+            <div>
+              <div className='india-container'>
+                  
+                  {/* <GhanaChart/> */}
+              </div>
+              <div className='india-container'>
+                  
+                  {/* <GhanaChart/> */}
+              </div>
+              <div className='india-container'>
+                  
+                  {/* <GhanaChart/> */}
+              </div>
+            </div>
+             
+
+          </div>
+
+        </div>
       </div>
       <div className='bottom-chart-section'>
         <div className='home-chart'>

@@ -3,7 +3,7 @@ import { SidebarData } from "./SidebarData";
 import Logo from "./assets/logo.svg";
 import Frame from "./assets/Frame.svg";
 import Add from "./assets/add.svg";
-
+import { Link } from "react-router-dom";
 import { BaseCard } from "./BaseCard";
 // Supports weights 100-900
 import profilePic1 from "./assets/profiles/Base.png";
@@ -63,19 +63,22 @@ function Sidebar() {
         <ul className="SidebarList">
           {SidebarData.map((val, key) => {
             return (
-              <li
-                key={key}
-                className="row"
-                id={window.location.pathname == val.link ? "active" : ""}
-                onClick={() => {
-                  window.location.pathname = val.link;
-                }}
-              >
-                <div className="list-items">
-                  <div id="icon">{val.icon}</div>
-                  <div id="title">{val.title}</div>
-                </div>
-              </li>
+              <Link className="sidebar-link" to={val.link}>
+                <li
+                  key={key}
+                  className="row"
+                  id={window.location.pathname == val.link ? "active" : ""}
+                  onClick={() => {
+                    window.location.pathname = val.link;
+                  }}
+                >
+                  <div className="list-items">
+                    <div id="icon">{val.icon}</div>
+                    <div id="title">{val.title}</div>
+                  </div>
+                </li>
+              </Link>
+              
             );
           })}
         </ul>
