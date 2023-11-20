@@ -12,7 +12,8 @@ const MyChart = () => {
         data: [21, 22, 10,]
       }],
       chart: {
-        height: 171,
+        height: 181,
+        width: 300,
         type: 'bar',
         toolbar: {
             show: false, // Hide the toolbar menu
@@ -21,8 +22,9 @@ const MyChart = () => {
       colors: colors,
       plotOptions: {
         bar: {
-          columnWidth: '8%',
+          columnWidth: '15%',
           distributed: true,
+          borderRadius: 2,
         }
       },
       dataLabels: {
@@ -31,12 +33,16 @@ const MyChart = () => {
       legend: {
         show: true,
         position: 'right', // Set the legend position to the right
-        offsetY:  78,
-        offsetX: 10,},
+        offsetY:  76,
+        offsetX: -40,
         markers: {
-            width: 8,
-            height: 8,
-          },
+          width: 12,
+          height: 12,
+          radius: 12,
+
+        },
+      },
+        
       xaxis: {
         categories: [
           ['John', 'Doe'],
